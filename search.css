@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+section{ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 194, 194);
+}
+#main{
+    width: 95%;
+    height: 90vh;
+    background-color: #a11741;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#search-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    padding: 7px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+#inpt1{
+    font-size: 1.2rem;
+    float: left;
+    line-height: 35px;
+    background: none;
+    padding: 0px;
+    width: 0px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 10, 24);
+    transition: .4s;
+}    
+#btn{
+    font-size: 1.2rem;
+    float: right;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+#btn i {
+    color: rgb(8, 11, 27);
+}
+#search-box:hover > #inpt1{
+    width: 350px;
+    padding: 0px 6px;
+}
+#search-box:hover > #btn {
+    background-color: rgb(5, 7, 15);
+}
+#search-box:hover > #btn > i{
+    color: #ffffff;
+}
+#context{
+    margin-top: 50px;
+    border: rgb(111, 216, 216) solid 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    width: 500px;
+    height: 500px;
+    border-radius: 4px;
+}
+#context h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+ul h2{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+ul{
+    padding-top: 10px;
+}
+
+li{
+    list-style: none;
+    color: rgb(0, 26, 56);
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    border-bottom: solid 1px rgba(126, 126, 126, 0.87);
+    padding-left: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
